@@ -1,0 +1,21 @@
+* What it is
+This emacs-lisp is backup copy by http://0xcc.net/misc/auto-save/auto-save-buffers.el
+
+This repository is used by my .emacs
+
+* How to use
+http://0xcc.net/misc/auto-save/
+
+元のコードは山岡克美氏が書いてくださった (ELF:01128)
+
+使い方:
+#+BEGIN_SRC elisp
+  (require 'auto-save-buffers)
+  (run-with-idle-timer 0.5 t 'auto-save-buffers) ; アイドル0.5秒で保存
+#+END_SRC
+
+auto-save-buffers の on/off を切り替えるためのキー定義 (C-x a s)
+#+BEGIN_SRC elisp
+  (define-key ctl-x-map "as" 'auto-save-buffers-toggle)
+#+END_SRC
+
