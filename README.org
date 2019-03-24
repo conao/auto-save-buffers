@@ -31,10 +31,6 @@ http://0xcc.net/misc/auto-save/
 
 元のコードは山岡克美氏が書いてくださった (ELF:01128)
 
-This software is for just practice ~bison~ and ~flex~.
-
-See https://cis.k.hosei.ac.jp/~nakata/lectureCompiler/YaccLex/index.html
-
 * Install
 1. Clone
    #+begin_src sh
