@@ -78,7 +78,9 @@ Feel free to send PR!
 #+end_example
 
 ** Author
-- Naoya Yamashita ([[https://github.com/conao3][conao3]])
+- Katsumi Yamaoka
 
 ** Contributor
-- Not yet... Now send PR and add your name!!
+- Satoru Takabayashi
+- Naoya Yamashita ([[https://github.com/conao3][conao3]])
+
