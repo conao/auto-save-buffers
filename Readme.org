@@ -1,14 +1,52 @@
-* What it is
+#+author: conao3
+#+date: <2018-10-25 Thu>
+
+[[https://github.com/conao3/auto-save-buffers.el][https://raw.githubusercontent.com/conao3/files/master/header/png/auto-save-buffers.el.png]]
+[[https://github.com/conao3/auto-save-buffers.el/blob/master/LICENSE][https://img.shields.io/github/license/conao3/auto-save-buffers.el.svg?style=flat-square]]
+[[https://github.com/conao3/auto-save-buffers.el/releases][https://img.shields.io/github/tag/conao3/auto-save-buffers.el.svg?style=flat-square]]
+[[https://travis-ci.org/conao3/auto-save-buffers.el][https://img.shields.io/travis/conao3/auto-save-buffers.el/master.svg?style=flat-square]]
+[[https://app.codacy.com/project/conao3/auto-save-buffers.el/dashboard][https://img.shields.io/codacy/grade/eeaf10d8113d4273833410e5809c6519.svg?logo=codacy&style=flat-square]]
+[[https://www.patreon.com/conao3][https://img.shields.io/badge/patreon-@conao3-orange.svg?logo=patreon&style=flat-square]]
+[[https://twitter.com/conao_3][https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&style=flat-square]]
+[[https://join.slack.com/t/conao3-support/shared_invite/enQtNTg2MTY0MjkzOTU0LTFjOTdhOTFiNTM2NmY5YTE5MTNlYzNiOTE2MTZlZWZkNDEzZmRhN2E0NjkwMWViZTZiYjA4MDUxYTUzNDZiNjY][https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&style=flat-square]]
+
 This emacs-lisp is backup copy by http://0xcc.net/misc/auto-save/auto-save-buffers.el
 
-This repository is used by my .emacs
+This repository is used by my init.el
 
-* How to use
+* Table of Contents
+- [[#background][Background]]
+- [[#install][Install]]
+- [[#usage][Usage]]
+- [[#information][Information]]
+  - [[#donation][Donation]]
+  - [[#community][Community]]
+  - [[#contribute][Contribute]]
+  - [[#license][License]]
+  - [[#author][Author]]
+  - [[#contributor][Contributor]]
+
+* Background
 http://0xcc.net/misc/auto-save/
 
 元のコードは山岡克美氏が書いてくださった (ELF:01128)
 
-使い方:
+This software is for just practice ~bison~ and ~flex~.
+
+See https://cis.k.hosei.ac.jp/~nakata/lectureCompiler/YaccLex/index.html
+
+* Install
+1. Clone
+   #+begin_src sh
+     git clone https://github.com/conao3/auto-save-buffers.el.git
+   #+end_src
+
+2. Require on your init.el
+   #+begin_src emacs-lisp
+     (require 'auto-save-buffers)
+   #+end_src
+
+* Usage
 #+BEGIN_SRC elisp
   (require 'auto-save-buffers)
   (run-with-idle-timer 0.5 t 'auto-save-buffers) ; アイドル0.5秒で保存
@@ -19,3 +57,32 @@ auto-save-buffers の on/off を切り替えるためのキー定義 (C-x a s)
   (define-key ctl-x-map "as" 'auto-save-buffers-toggle)
 #+END_SRC
 
+* Information
+** Donation
+I love OSS and I am dreaming of working on it as *full-time* job.
+
+*With your support*, I will be able to spend more time at OSS!
+
+[[https://www.patreon.com/conao3][https://c5.patreon.com/external/logo/become_a_patron_button.png]]
+
+** Community
+All feedback and suggestions are welcome!
+
+You can use github issues, but you can also use [[https://join.slack.com/t/conao3-support/shared_invite/enQtNTg2MTY0MjkzOTU0LTFjOTdhOTFiNTM2NmY5YTE5MTNlYzNiOTE2MTZlZWZkNDEzZmRhN2E0NjkwMWViZTZiYjA4MDUxYTUzNDZiNjY][Slack]]
+if you want a more casual conversation.
+
+** Contribution
+Feel free to send PR!
+
+** License
+#+begin_example
+  The MIT License (MIT)
+  Copyright (c) Naoya Yamashita - https://conao3.com
+  https://github.com/conao3/auto-save-buffers.el/blob/master/LICENSE
+#+end_example
+
+** Author
+- Naoya Yamashita ([[https://github.com/conao3][conao3]])
+
+** Contributor
+- Not yet... Now send PR and add your name!!
